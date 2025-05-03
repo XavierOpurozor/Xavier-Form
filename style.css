@@ -1,1 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background to make neon elements pop */
+    color: #E0E0E0; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Form container */
+form {
+    background: #333; /* Dark grey background */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+/* Form header */
+form h2 {
+    text-align: center;
+    color: #B0B0B0; /* Silver color for text */
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #B0B0B0; /* Silver border */
+    background-color: #222; /* Dark background for input */
+    color: #B0B0B0;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input field focus state */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #00FF00; /* Neon green focus */
+    background-color: #444; /* Slightly lighter background */
+    outline: none;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00FF00; /* Neon green */
+    color: #121212; /* Dark text for contrast */
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #B0B0B0; /* Silver */
+    font-weight: bold;
+}
+
+/* Styling for the form container on smaller screens */
+@media screen and (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+    form h2 {
+        font-size: 1.5em;
+    }
+}
 
